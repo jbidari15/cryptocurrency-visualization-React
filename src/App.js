@@ -83,9 +83,9 @@ render() {
           <h1>CRYPTOCURRENCY VIEWER</h1>
                <div className="buttons">
                   <input type="text" onChange={this.search}/>
-                 <Sort button={<button onClick={this.sortName}>SortByName</button>}/>
-                  <Sort button={<button onClick={this.sortPrice}>SortByPrice</button>}/>
-                 <Sort button={<button onClick={this.sortRank}>SortByRank</button>}/>
+                 <Sort sort={this.sortName} name="SortByName"/>
+                 <Sort sort={this.sortPrice} name="SortByPrice"/>
+                 <Sort sort={this.sortRank} name="SortByRank"/>
                </div>
             
            <div className="items">

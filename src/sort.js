@@ -6,9 +6,7 @@ class Sort extends Component{
     }
     render(){
         return(
-            <div >
-              {this.props.button}
-            </div>
+            <button onClick={this.props.sort}>{this.props.name}</button>
         )
     }
 }
